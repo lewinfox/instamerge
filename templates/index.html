@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+        <title>Photo merger</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Photo merger</h1>
+        </div>
+        <div class="container">
+            <p>Merge instagram photos. Inspired by <a href="https://www.theguardian.com/artanddesign/gallery/2017/may/16/jason-shulman-films-condensed-into-a-single-photo-frame-in-pictures">this</a> article.</p>
+        </div>
+        <div class="container">
+            {% if name %}
+                <p>Hello {{ name }}</p>
+            {% endif %}
+            {% if now %}
+                <p>The time is {{ now }}</p>
+            {% endif %}
+        </div>
+        <div class="container">
+            <a class="btn btn-primary" name="button" href="/redirect">Redirect me</a>
+        </div>
+        <script type="text/javascript" src="static/app.js"></script>
+    </body>
+</html>
